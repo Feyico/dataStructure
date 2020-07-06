@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+setting.json
+c_cpp_properties
