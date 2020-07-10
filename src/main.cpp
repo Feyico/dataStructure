@@ -1,9 +1,11 @@
-#include <iostream>
+#include "HeapStack.h"
+#include "Common.h"
 
 using namespace std;
-
-void heapLearn()
+void OperateStack()
 {
+    ArrayStack stackMember;
+    
     return;
 }
 
