@@ -33,3 +33,6 @@
 
 setting.json
 c_cpp_properties
+
+# Compiled files
+bin
