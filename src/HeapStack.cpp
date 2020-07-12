@@ -36,8 +36,8 @@ DSReturn ArrayStack::Pop(DataType &item)
 {
     if (!IsEmpty())
     {
-        this->top--;
         item = this->stack_list[this->top];
+        this->top--;
     }
     else
     {
