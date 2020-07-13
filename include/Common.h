@@ -5,11 +5,12 @@
 
 enum DSReturn
 {
-    DSRETSUCCESS = 0,   //0--成功
-    DSRETPUSHERR,       //1--push失败
-    DSRETPOPERR,        //2--pop失败
-    DSRETEMPTYSTACK,    //3--空栈
-    DSRETFULLSTACK      //4--满栈
+    DSRETSUCCESS = 0,       //0--成功
+    DSRETPUSHERR,           //1--push失败
+    DSRETPOPERR,            //2--pop失败
+    DSRETEMPTYSTACK,        //3--空栈
+    DSRETFULLSTACK,         //4--满栈
+    DSRETERRVAILDCHECK      //5--参数检测错误
 };
 
 #endif
