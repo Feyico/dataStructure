@@ -4,12 +4,12 @@
 #include "Common.h"
 
 typedef int DataType;
-const int MAXSIZE = 10;
 
 class ArrayStack
 {
 private:
-    DataType stack_list[MAXSIZE];//堆栈
+    enum {MAXSIZE = 10};
+    DataType stack_list[MAXSIZE];
     int top; //栈顶
 public:
     ArrayStack();
@@ -26,8 +26,8 @@ public:
 
 private:
     //判断满和空
-    bool IsFull(void)const;
-    bool IsEmpty(void)const;
+    bool IsFull(void)const { return this->top >= (MAXSIZE - 1) ? true:false; };
+    bool IsEmpty(void)const { return this->top <= -1 ? true:false; };
 };
 
 #endif

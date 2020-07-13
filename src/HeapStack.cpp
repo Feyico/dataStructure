@@ -81,12 +81,12 @@ DSReturn ArrayStack::Peek(DataType &item)const
 }
 
 //判断满和空
-bool ArrayStack::IsFull(void)const
-{
-    //当栈顶大于等于栈空间-1视为栈满
-    return this->top >= (MAXSIZE - 1) ? true:false;
-}
-bool ArrayStack::IsEmpty(void)const
-{
-    return this->top <= -1 ? true:false;
-}
+// bool ArrayStack::IsFull(void)const
+// {
+//     //当栈顶大于等于栈空间-1视为栈满
+//     return this->top >= (MAXSIZE - 1) ? true:false;
+// }
+// bool ArrayStack::IsEmpty(void)const
+// {
+//     return this->top <= -1 ? true:false;
+// }
