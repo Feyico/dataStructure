@@ -10,7 +10,8 @@ enum DSReturn
     DSRETPOPERR,            //2--pop失败
     DSRETEMPTYSTACK,        //3--空栈
     DSRETFULLSTACK,         //4--满栈
-    DSRETERRVAILDCHECK      //5--参数检测错误
+    DSRETERRVAILDCHECK,     //5--参数检测错误
+    DSRETERRCREATE          //6--创建失败
 };
 
 #endif
