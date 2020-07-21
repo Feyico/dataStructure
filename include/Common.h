@@ -11,7 +11,9 @@ enum DSReturn
     DSRETEMPTYSTACK,        //3--空栈
     DSRETFULLSTACK,         //4--满栈
     DSRETERRVAILDCHECK,     //5--参数检测错误
-    DSRETERRCREATE          //6--创建失败
+    DSRETERRCREATE,         //6--创建失败
+    DSRETFULLQUEUE,         //7--满队列
+    DSRETTEMPTYQUEUE        //8--空队列
 };
 
 #endif
