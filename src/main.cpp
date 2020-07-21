@@ -3,6 +3,8 @@
 #include "HeapStack.h"
 #include "DoubleStack.h"
 #include "LinkStack.h"
+#include "TestQueue.h"
+#include "Queue.h"
 
 #define STACKSIZE 10
 
@@ -93,7 +95,44 @@ void OperateDoubleStack()
     return;
 }
 
-void Menu()
+void MainMenu()
+{
+    int choose = 0;
+    cout << "+----------------------------------------+" << endl;
+    cout << "|    0.EXIT         1.TEST Stack         |" << endl;
+    cout << "+----------------------------------------+" << endl;
+    cout << "|    2.TEST Queue   3.TEST Chain Table   |" << endl;
+    cout << "+----------------------------------------+" << endl;
+    cout << "|    4.TEST Tree                         |" << endl;
+    cout << "+----------------------------------------+" << endl;
+    
+    while (true)
+    {
+        cout << "Please enter your choice: ";
+        cin >> choose;
+        switch (choose)
+        {
+        case 0:
+            cout << "Good Bye !" <<endl;
+            return;
+        case 1:
+            OperateStack();
+            return;
+        case 2:
+            OperateQueue();
+            return;
+        case 3:
+            return;
+        case 4:
+            return;
+        default:
+            cout << "ERROR Choice!" << endl;
+            break;
+        }
+    }
+}
+
+void StackMenu()
 {
     cout<<"+===========================================+"<<endl;
     cout<<"|    1.测试元素进栈      2.测试元素出栈         |"<<endl;
@@ -112,7 +151,7 @@ void OperateLinkStack()
     {
         lStackMember.Push(i+1);
     }
-    Menu();
+    StackMenu();
     int choose=1;
     int tmp;
     while(choose)
@@ -161,18 +200,16 @@ void OperateLinkStack()
             default:
                 break;
             cout << endl;
-            Menu();
+            StackMenu();
         }
         cout<<endl;
-        Menu();
+        StackMenu();
     }
     return;
 }
 
 int main()
 {
-    //OperateStack();
-    //OperateDoubleStack();
-    OperateLinkStack();
+    MainMenu();
     return 0;
 }
