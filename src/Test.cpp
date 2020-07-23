@@ -1,8 +1,9 @@
-#include "TestQueue.h"
+#include "Test.h"
 #include "Queue.h"
 
 using namespace std;
 
+/***************************  QUEUE  ****************************/
 void QueueMenu(void)
 {
     cout<<"+===========================================+"<<endl;
@@ -73,3 +74,19 @@ void OperateQueue(void)
     }
     return;
 }
+/***************************  QUEUE  ****************************/
+
+/***************************  LinkList  ****************************/
+void LinkListMenu(void)
+{
+    return;
+}
+
+void OperateLinkList(void)
+{
+    return;
+}
+/***************************  LinkList  ****************************/
+
+
+
