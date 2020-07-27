@@ -115,7 +115,7 @@ inline DSReturn Queue<T>::Dequeue(T & item)
     //1.判断队列是否为空
     if (IsEmpty())
     {
-        return DSRETTEMPTYQUEUE;
+        return DSRETEMPTYQUEUE;
     }
 
     //2.创建一个新的节点
