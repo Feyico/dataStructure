@@ -13,7 +13,9 @@ enum DSReturn
     DSRETERRVAILDCHECK,     //5--参数检测错误
     DSRETERRCREATE,         //6--创建失败
     DSRETFULLQUEUE,         //7--满队列
-    DSRETTEMPTYQUEUE        //8--空队列
+    DSRETEMPTYQUEUE,        //8--空队列
+    DSRETEMPTYLINKLIST,     //9--空链表
+    DSRETNOTEXISTNODE       //10--不存在的结点
 };
 
 #endif
