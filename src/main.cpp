@@ -3,7 +3,7 @@
 #include "HeapStack.h"
 #include "DoubleStack.h"
 #include "LinkStack.h"
-#include "TestQueue.h"
+#include "Test.h"
 #include "Queue.h"
 
 #define STACKSIZE 10
@@ -122,6 +122,7 @@ void MainMenu()
             OperateQueue();
             return;
         case 3:
+            OperateLinkList();
             return;
         case 4:
             return;
